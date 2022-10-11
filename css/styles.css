@@ -1,0 +1,136 @@
+@import url("/css/variables.css");
+
+@font-face {
+   font-family: "Jost";
+   src: url("../fonts/Jost-VariableFont_wght.ttf");
+}
+
+* {
+   /* Css reset */
+   box-sizing: border-box;
+   text-decoration: none;
+   margin: 0;
+   list-style: none;
+}
+
+body {
+   font-family: "Jost", sans-serif;
+   font-variation-settings: "wght" 500;
+   display: grid;
+   grid-template-rows: auto minmax(400px, auto);
+}
+
+/* ------------------------------------------------------- */
+/* General Structure classes */
+
+.flex {
+   display: flex;
+}
+
+.flex-ctr-xy {
+   justify-content: center;
+   align-items: center;
+}
+
+.content-container {
+   min-width: 300px;
+   max-width: 1310px;
+   margin: auto;
+}
+
+.border-x {
+   border-left: 1px solid var(--black-color);
+   border-right: 1px solid var(--black-color);
+}
+/* ------------------------------------------------------- */
+/* Skin Structure classes */
+
+.bg-black {
+   background-color: var(--black-color);
+}
+
+.bg-white {
+   background-color: var(--white-color);
+}
+
+.clr-black {
+   color: var(--black-color);
+}
+
+.clr-white {
+   color: var(--black-color);
+}
+
+.cursor-ptr {
+   cursor: pointer;
+}
+
+/* ------------------------------------------------------- */
+/* Header */
+
+.header-content {
+   justify-content: flex-start;
+   height: 120px;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.header-logo {
+   width: 70px;
+   height: 70px;
+   font-size: 20px;
+   font-weight: bold;
+   border: 5px solid black;
+}
+
+.header-nav {
+   display: none;
+   height: auto;
+   background-color: var(--black-color);
+   align-items: center;
+}
+
+.header-list {
+   gap: 30px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* ------------------------------------------------------- */
+/* Footer */
+
+.footer {
+   height: 390px;
+}
+
+.footer-content {
+   width: 300px;
+   height: 100%;
+}
+
+.footer-copywrite {
+   height: 50px;
+
+   color: var(--white-color);
+   border-top: 2px solid rgb(255, 255, 255, 0.7);
+}
+
+/* Sticky Nav */
+
+.sticky-nav-link {
+   height: 50px;
+   padding: 20px;
+   flex-direction: column;
+   gap: 5px;
+}
+
+@media (min-width: 700px) {
+   .header-content {
+      justify-content: space-between;
+   }
+
+   .header-nav {
+      display: block;
+      background-color: var(--white-color);
+   }
+}

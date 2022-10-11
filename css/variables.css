@@ -1,0 +1,36 @@
+/* Css Variables */
+
+:root {
+   /* Colors */
+
+   --yellow-color: #f2d949;
+   --black-color: #2a2a2a;
+   --white-color: #f9f6e7;
+
+   /* Font-sizes with scale of 1.2 and base size of 16px*/
+   --font-base-size: 1rem;
+
+   --font-p5: calc(var(--font-p4) / 1.125);
+   --font-p4: calc(var(--font-p3) / 1.125);
+   --font-p3: var(--font-base-size);
+   --font-p2: calc(var(--font-base-size) * 1.125);
+   --font-p1: calc(var(--font-p2) * 1.125);
+   --font-h3: calc(var(--font-p1) * 1.125);
+   --font-h2: calc(var(--font-h3) * 1.125);
+   --font-h1: calc(var(--font-h2) * 1.125);
+}
+
+@media (min-width: 740px) {
+   :root {
+      /* Font-sizes with scale of 1.25 */
+
+      --font-p5: calc(var(--font-p4) / 1.2);
+      --font-p4: calc(var(--font-p3) / 1.2);
+      --font-p3: var(--font-base-size);
+      --font-p2: calc(var(--font-base-size) * 1.2);
+      --font-p1: calc(var(--font-p2) * 1.2);
+      --font-h3: calc(var(--font-p1) * 1.2);
+      --font-h2: calc(var(--font-h3) * 1.2);
+      --font-h1: calc(var(--font-h2) * 1.2);
+   }
+}
