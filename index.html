@@ -10,41 +10,45 @@
    </head>
    <body class="bg-white">
       <header>
-         <div class="header-content content-container flex">
-            <a href="index.html" class="header-logo flex flex-ctr-xy clr-black cursor-ptr">
-               <p>R.B</p>
-            </a>
-            <nav class="header-nav">
-               <ul class="header-list flex">
-                  <li><a href="about.html" class="clr-black">About</a></li>
-                  <li><a href="index.html" class="clr-black">Work</a></li>
-                  <li><a href="contact.html" class="clr-black">Contact</a></li>
-               </ul>
-            </nav>
+         <div class="content-container">
+            <div class="header-content flex border-btm">
+               <a href="index.html" class="header-logo flex flex-ctr-xy bg-black cursor-ptr">
+                  <p class="clr-white">Rb</p>
+               </a>
+               <nav class="header-nav">
+                  <ul class="header-list flex">
+                     <li><a href="about.html" class="clr-black">About</a></li>
+                     <li><a href="index.html" class="clr-black">Work</a></li>
+                     <li><a href="contact.html" class="clr-black">Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
          </div>
       </header>
       <main>
-         <div class="content-container">
-            <h1>test</h1>
-         </div>
+         <section class="banner flex content-container margin-y-40">
+            <p>Hey, my name is</p>
+            <h1>Richie Botteri.</h1>
+            <p>I build user-friendly frontend web solutions.</p>
+         </section>
       </main>
       <footer class="footer bg-black">
          <div class="footer-content"></div>
          <div class="footer-copywrite flex flex-ctr-xy bg-black"><p>Copyright &COPY;</p></div>
       </footer>
-      <div class="bg-white">
+      <div class="sticky-nav bg-white">
          <div class="content-container"></div>
          <nav class="sticky-nav flex flex-ctr-xy">
-            <a href="#" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
-               <i class="fa-solid fa-messages"></i>
+            <a href="index.html#contact" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
+               <i class="fa-solid fa-envelope"></i>
                <p>Contact</p>
             </a>
-            <a href="#" class="sticky-nav-link flex flex-ctr-xy clr-black">
-               <i class="fa-solid fa-book-open-reader"></i>
+            <a href="index.html#work" class="sticky-nav-link flex flex-ctr-xy clr-black">
+               <i class="fa-solid fa-suitcase"></i>
                <p>Work</p>
             </a>
-            <a href="#" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
-               <i class="fa-solid fa-star"></i>
+            <a href="index.html#about" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
+               <i class="fa-solid fa-user"></i>
                <p>About</p>
             </a>
          </nav>
