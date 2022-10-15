@@ -10,7 +10,7 @@
    </head>
    <body class="bg-white">
       <header>
-         <div class="content-container">
+         <div class="header-container">
             <div class="header-content flex border-btm">
                <a href="index.html" class="header-logo flex flex-ctr-xy bg-black cursor-ptr">
                   <p class="clr-white">Rb</p>
@@ -26,30 +26,102 @@
          </div>
       </header>
       <main>
-         <section class="banner flex content-container margin-y-40">
+         <section class="banner-container flex margin-y-40">
             <p>Hey, my name is</p>
             <h1>Richie Botteri.</h1>
-            <p>I build user-friendly frontend web solutions.</p>
+            <p class="banner-description">I build user-friendly frontend web solutions.</p>
          </section>
+
+         <div class="bg-black">
+            <section class="section-container flex-col flex-gap-40 clr-white">
+               <div class="arrow-container flex">
+                  <div class="arrow bg-white">
+                     <div class="arrow-rotate flex">
+                        <p class="font-p2 clr-black">About</p>
+                        <i class="fa-solid fa-user clr-black"></i>
+                     </div>
+                  </div>
+               </div>
+               <h2>About Me</h2>
+               <div class="about-content flex-colrow-rev">
+                  <img class="about-image" src="/images/" alt="picture of author" />
+                  <p class="about-description">
+                     I'm taking a two year front-end developer education at Noroff school of vocational studies. We create user-friendly web solutions that follows the design thinking process, applying the universal principles of design and ensuring that our web solutions are accessibility.
+                  </p>
+               </div>
+               <h3 class="tech-title">technology's i'm working with</h3>
+               <div class="flex flex-wrap flex-gap-40">
+                  <div class="tech-container flex-col flex-ctr-xy flex-gap-20">
+                     <p>Html</p>
+                     <i class="fa-brands fa-html5 tech-icon"></i>
+                  </div>
+                  <div class="tech-container flex-col flex-ctr-xy flex-gap-20">
+                     <p>Css</p>
+                     <i class="fa-brands fa-css3-alt tech-icon"></i>
+                  </div>
+
+                  <div class="tech-container flex-col flex-ctr-xy flex-gap-20">
+                     <p>Javascript</p>
+                     <i class="fa-brands fa-js tech-icon"></i>
+                  </div>
+                  <div class="tech-container flex-col flex-ctr-xy flex-gap-20">
+                     <p>Wordpress</p>
+                     <i class="fa-brands fa-wordpress tech-icon"></i>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <section class="section-container flex-col flex-gap-40">
+            <div class="arrow-container flex flex-ctr-start-x">
+               <div class="arrow bg-black">
+                  <div class="arrow-rotate flex">
+                     <p class="font-p2 clr-white">Work</p>
+                     <i class="fa-solid fa-suitcase clr-white"></i>
+                  </div>
+               </div>
+            </div>
+            <h2>Here are some projects i have been working on!</h2>
+            <a href="#" class="project-container bg-image-blog flex flex-ctr-xy">
+               <div class="project-banner bg-yellow flex-colrow flex-ctr-xy">
+                  <div class="project-logo-container flex-col flex-ctr-xy flex-gap-40">
+                     <div class="project-logo-blog bg-black clr-white flex flex-ctr-xy">
+                        <i class="fa-solid fa-dumbbell blog-icon"></i>
+                     </div>
+                     <p>Strength & Nutrion blog</p>
+                  </div>
+               </div>
+            </a>
+         </section>
+         <div class="bg-black">
+            <section class="section-container">
+               <div class="arrow-container flex">
+                  <div class="arrow bg-white">
+                     <div class="arrow-rotate flex">
+                        <p class="font-p2 clr-black">Contact</p>
+                        <i class="fa-solid fa-user"></i>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
       </main>
       <footer class="footer bg-black">
          <div class="footer-content"></div>
-         <div class="footer-copywrite flex flex-ctr-xy bg-black"><p>Copyright &COPY;</p></div>
+         <div class="footer-copywrite flex flex-ctr-xy bg-black"><p class="font-p2">Copyright &COPY;</p></div>
       </footer>
       <div class="sticky-nav bg-white">
-         <div class="content-container"></div>
          <nav class="sticky-nav flex flex-ctr-xy">
             <a href="index.html#contact" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
                <i class="fa-solid fa-envelope"></i>
-               <p>Contact</p>
+               <p class="font-p3">Contact</p>
             </a>
             <a href="index.html#work" class="sticky-nav-link flex flex-ctr-xy clr-black">
                <i class="fa-solid fa-suitcase"></i>
-               <p>Work</p>
+               <p class="font-p3">Work</p>
             </a>
             <a href="index.html#about" class="sticky-nav-link flex flex-ctr-xy clr-black border-x">
                <i class="fa-solid fa-user"></i>
-               <p>About</p>
+               <p class="font-p3">About</p>
             </a>
          </nav>
       </div>

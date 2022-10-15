@@ -7,6 +7,11 @@
    --black-color: #151515;
    --white-color: #fff7eb;
 
+   /* Colors for Project Cards */
+   --yellow-color: #ffca19;
+   --purple-color: #2b0548;
+   --blue-color: #233143;
+
    /* Font-sizes with scale of 1.2 and base size of 16px*/
    --font-base-size: 1rem;
 
@@ -24,13 +29,13 @@
    :root {
       /* Font-sizes with scale of 1.25 */
 
-      --font-p5: calc(var(--font-p4) / 1.414);
-      --font-p4: calc(var(--font-p3) / 1.414);
+      --font-p5: calc(var(--font-p4) / 1.333);
+      --font-p4: calc(var(--font-p3) / 1.333);
       --font-p3: var(--font-base-size);
-      --font-p2: calc(var(--font-base-size) * 1.414);
-      --font-p1: calc(var(--font-p2) * 1.414);
-      --font-h3: calc(var(--font-p1) * 1.414);
-      --font-h2: calc(var(--font-h3) * 1.414);
-      --font-h1: calc(var(--font-h2) * 1.414);
+      --font-p2: calc(var(--font-base-size) * 1.333);
+      --font-p1: calc(var(--font-p2) * 1.333);
+      --font-h3: calc(var(--font-p1) * 1.333);
+      --font-h2: calc(var(--font-h3) * 1.333);
+      --font-h1: calc(var(--font-h2) * 1.333);
    }
 }
