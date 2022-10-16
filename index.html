@@ -10,7 +10,7 @@
    </head>
    <body class="bg-white">
       <header>
-         <div class="header-container">
+         <div class="header-container bg-white">
             <div class="header-content flex border-btm">
                <a href="index.html" class="header-logo flex flex-ctr-xy bg-black cursor-ptr">
                   <p class="clr-white">Rb</p>
@@ -31,9 +31,8 @@
             <h1>Richie Botteri.</h1>
             <p class="banner-description">I build user-friendly frontend web solutions.</p>
          </section>
-
          <div class="bg-black">
-            <section class="section-container flex-col flex-gap-40 clr-white">
+            <section id="about" class="section-container flex-col flex-gap-40 clr-white">
                <div class="arrow-container flex">
                   <div class="arrow bg-white">
                      <div class="arrow-rotate flex">
@@ -44,7 +43,7 @@
                </div>
                <h2>About Me</h2>
                <div class="about-content flex-colrow-rev">
-                  <img class="about-image" src="/images/" alt="picture of author" />
+                  <img class="about-image" src="/images/about-image.jpg" alt="picture of author" />
                   <p class="about-description">
                      I'm taking a two year front-end developer education at Noroff school of vocational studies. We create user-friendly web solutions that follows the design thinking process, applying the universal principles of design and ensuring that our web solutions are accessibility.
                   </p>
@@ -71,7 +70,7 @@
                </div>
             </section>
          </div>
-         <section class="section-container flex-col flex-gap-40">
+         <section id="work" class="section-container flex-col flex-gap-40">
             <div class="arrow-container flex flex-ctr-start-x">
                <div class="arrow bg-black">
                   <div class="arrow-rotate flex">
@@ -81,49 +80,43 @@
                </div>
             </div>
             <h2>Here are some projects i have been working on!</h2>
-            <a href="#" class="project-container bg-image-blog flex flex-ctr-xy">
+            <div class="project-container bg-image-blog flex flex-ctr-xy">
                <div class="project-banner bg-yellow flex-colrow flex-ctr-xy">
                   <div class="flex-col flex-ctr-y flex-space-btwn flex-gap-40">
                      <div class="project-logo-blog bg-black clr-white flex flex-ctr-xy">
                         <i class="fa-solid fa-dumbbell blog-icon"></i>
                      </div>
                      <p class="project-logo-title">Strength & Nutrion blog</p>
-                     <div class="view-more">
-                        <p class="font-p2">View Project</p>
-                     </div>
+                     <p data-id="1" class="cta brdr-black clr-black flex flex-ctr-xy font-p2 cursor-ptr">View Project</p>
                   </div>
                </div>
-            </a>
-            <a href="#" class="project-container bg-image-museum flex flex-ctr-xy">
+            </div>
+            <div class="project-container bg-image-museum flex flex-ctr-xy">
                <div class="project-banner bg-purple flex-colrow flex-ctr-xy">
                   <div class="flex-col flex-ctr-xy flex-gap-20">
                      <div class="project-logo-blog flex flex-ctr-xy">
                         <img class="img-cover" src="/images/Project-Semester-Logo-2.png" alt="" />
                      </div>
                      <p class="project-logo-title clr-white">Science Museum</p>
-                     <div class="view-more clr-white">
-                        <p class="font-p2">View Project</p>
-                     </div>
+                     <p data-id="2" class="cta bg-white flex flex-ctr-xy font-p2 cursor-ptr">View Project</p>
                   </div>
                </div>
-            </a>
-            <a href="#" class="project-container bg-image-museum flex flex-ctr-xy">
+            </div>
+            <div class="project-container bg-image-museum flex flex-ctr-xy">
                <div class="project-banner bg-blue flex-colrow flex-ctr-xy">
-                  <div class="flex-col flex-ctr-xy flex-gap-20">
+                  <div class="flex-col flex-ctr-xy flex-gap-40">
                      <div class="project-logo-rainyday flex flex-ctr-xy">
                         <img class="img-cover" src="/images/RainyDays_Logo_Without-slogen_Desktop-Logo.png" alt="" />
                      </div>
-
-                     <div class="view-more clr-white">
-                        <p class="font-p2">View Project</p>
-                     </div>
+                     <p data-id="3" class="cta bg-white flex flex-ctr-xy font-p2 cursor-ptr">View Project</p>
                   </div>
                </div>
-            </a>
+            </div>
          </section>
+         <div class="flex modal hide-element"></div>
       </main>
       <footer class="bg-black">
-         <section class="section-container clr-white flex-col flex-gap-40">
+         <section id="contact" class="section-container clr-white flex-col flex-gap-40">
             <div class="arrow-container flex">
                <div class="arrow bg-white clr-black">
                   <div class="arrow-rotate flex">

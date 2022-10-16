@@ -91,12 +91,16 @@ h3 {
    align-items: center;
 }
 
-.flex-space-btwn {
-   justify-content: space-between;
+.flex-ctr-x {
+   justify-content: center;
 }
 
 .flex-ctr-y {
    align-items: center;
+}
+
+.flex-space-btwn {
+   justify-content: space-between;
 }
 
 .flex-ctr-start-x {
@@ -106,7 +110,8 @@ h3 {
 .section-container,
 .header-container,
 .banner-container,
-.project-container {
+.project-container,
+.modal-container {
    min-width: 300px;
    max-width: 950px;
    margin: 0 auto;
@@ -115,6 +120,11 @@ h3 {
 
 .section-container {
    padding: 110px 40px;
+}
+
+.modal-container {
+   padding: 80px 40px;
+   max-width: 100%;
 }
 
 .border-x {
@@ -159,6 +169,14 @@ h3 {
 }
 .bg-purple {
    background-color: var(--purple-color);
+}
+
+.brdr-white {
+   border: 3px solid var(--white-color);
+}
+
+.brdr-black {
+   border: 3px solid var(--black-color);
 }
 
 .clr-black {
@@ -207,11 +225,28 @@ h3 {
 }
 
 /* ------------------------------------------------------- */
+/* Call-to-action Buttons */
+
+.cta {
+   height: fit-content;
+   width: 150px;
+   padding: 10px;
+   transition: 0.2s;
+}
+
+.cta:hover {
+   background-color: black;
+   outline: 2px solid white;
+   color: white;
+}
+
+/* ------------------------------------------------------- */
 /* Header */
 
 .header-container {
    max-width: 1640px;
    margin: 40px auto 0 auto;
+   height: auto;
 }
 
 .header-content {
@@ -264,6 +299,12 @@ h3 {
    gap: 40px;
 }
 
+.about-image {
+   width: 300px;
+   height: auto;
+   border-radius: 100%;
+}
+
 .tech-container {
    width: 150px;
 }
@@ -296,7 +337,7 @@ h3 {
    outline: 3px solid black;
 }
 
-.project-container:hover .project-banner .view-more {
+.project-container:hover .project-banner .cta {
    background-color: var(--black-color);
    color: var(--white-color);
 }
@@ -323,11 +364,25 @@ h3 {
    text-align: center;
 }
 
-.view-more {
-   border: 3px solid var(--black-color);
-   padding: 10px;
-   margin-top: 40px;
-   transition: 0.2s;
+/* ------------------------------------------------------- */
+/* Modal */
+
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   overflow: auto;
+   background: rgba(0, 0, 0, 0.8);
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-image {
+   width: 100%;
+   padding: 40px;
+   height: fit-content;
 }
 
 /* ------------------------------------------------------- */
@@ -378,16 +433,21 @@ h3 {
 }
 
 @media (min-width: 740px) {
-   /* Skin Classes */
-
    .header-content {
       justify-content: space-between;
-      padding-right: 20px;
+      padding-right: 40px;
+      background-color: var(--white-color);
    }
 
    .header-nav {
       display: block;
       background-color: var(--white-color);
+   }
+
+   /* About */
+
+   .about-image {
+      width: 320px;
    }
 
    .banner-container {
