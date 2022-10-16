@@ -91,6 +91,14 @@ h3 {
    align-items: center;
 }
 
+.flex-space-btwn {
+   justify-content: space-between;
+}
+
+.flex-ctr-y {
+   align-items: center;
+}
+
 .flex-ctr-start-x {
    justify-content: center;
 }
@@ -126,6 +134,10 @@ h3 {
    width: 100%;
    height: 100%;
    object-fit: cover;
+}
+
+.hide-element {
+   display: none;
 }
 
 /* ------------------------------------------------------- */
@@ -261,27 +273,43 @@ h3 {
 /* ------------------------------------------------------- */
 /* Work */
 
+.bg-image-museum {
+   background: no-repeat center/cover url("/images/Homepage-Hero-banner.jpg");
+}
 .bg-image-blog {
    background: no-repeat center/cover url("/images/banner-img.jpg");
 }
 
 .project-container {
    height: 600px;
+   width: fit-content;
+   padding: 0;
+   transition: 0.1s;
 }
 
 .project-banner {
-   width: 90%;
+   width: 70%;
    height: 100%;
 }
 
-.project-logo-container {
-   width: 133px;
+.project-container:hover {
+   outline: 3px solid black;
+}
+
+.project-container:hover .project-banner .view-more {
+   background-color: var(--black-color);
+   color: var(--white-color);
 }
 
 .project-logo-blog {
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 70px;
    transform: rotate(45deg);
+}
+.project-logo-rainyday {
+   width: 210px;
+   height: auto;
+   padding: 40px;
 }
 
 .blog-icon {
@@ -290,16 +318,32 @@ h3 {
    transform: rotate(-45deg);
 }
 
+.project-logo-title {
+   width: 63%;
+   text-align: center;
+}
+
+.view-more {
+   border: 3px solid var(--black-color);
+   padding: 10px;
+   margin-top: 40px;
+   transition: 0.2s;
+}
+
 /* ------------------------------------------------------- */
 /* Footer */
-
-.footer {
-   height: 390px;
-}
 
 .footer-content {
    width: 300px;
    height: 100%;
+}
+
+.social-media {
+   width: fit-content;
+}
+
+.fa-brands {
+   font-size: var(--font-h2);
 }
 
 .footer-copywrite {
@@ -348,6 +392,20 @@ h3 {
 
    .banner-container {
       height: 500px;
+   }
+
+   .project-banner {
+      width: 100%;
+      height: 70%;
+   }
+
+   /* Work */
+   .project-container {
+      width: 100%;
+   }
+
+   .project-logo-rainyday {
+      width: 250px;
    }
 
    /* Sticky Nav */
