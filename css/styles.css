@@ -42,6 +42,10 @@ p {
    font-size: var(--font-p1);
 }
 
+button {
+   border: none;
+}
+
 h1 {
    font-size: var(--font-h1);
    font-family: "source-semibold", sans-serif;
@@ -150,6 +154,13 @@ h3 {
    display: none;
 }
 
+.close-btn {
+   width: 50px;
+   height: 50px;
+   background-color: darkred;
+   color: var(--white-color);
+}
+
 /* ------------------------------------------------------- */
 /* General Skin classes */
 
@@ -234,7 +245,8 @@ h3 {
    transition: 0.2s;
 }
 
-.cta:hover {
+.cta:hover,
+.cta:focus {
    background-color: black;
    outline: 2px solid white;
    color: white;
@@ -306,7 +318,7 @@ h3 {
 }
 
 .tech-container {
-   width: 150px;
+   width: 130px;
 }
 .tech-icon {
    font-size: var(--font-h1);
@@ -314,6 +326,9 @@ h3 {
 /* ------------------------------------------------------- */
 /* Work */
 
+.work-title {
+   margin-bottom: 40px;
+}
 .bg-image-museum {
    background: no-repeat center/cover url("/images/Homepage-Hero-banner.jpg");
 }
@@ -323,13 +338,13 @@ h3 {
 
 .project-container {
    height: 600px;
-   width: fit-content;
+   width: 100%;
    padding: 0;
    transition: 0.1s;
 }
 
 .project-banner {
-   width: 70%;
+   min-width: 300px;
    height: 100%;
 }
 
@@ -377,12 +392,18 @@ h3 {
    background: rgba(0, 0, 0, 0.8);
    justify-content: center;
    align-items: center;
+   z-index: 5;
 }
 
 .modal-image {
-   width: 100%;
+   width: 80%;
    padding: 40px;
    height: fit-content;
+}
+
+.modal-description {
+   min-width: 300px;
+   max-width: 600px;
 }
 
 /* ------------------------------------------------------- */
